@@ -5,7 +5,7 @@ const FormInput = ({ label, onChange, ...rest }) => {
 	return (
 		<div className='form-input'>
 			<input onChange={onChange} {...rest} />
-			<label>{label}</label>
+			<label className={`${rest.value.length ? 'floating' : null}`}>{label}</label>
 		</div>)
 }
 
